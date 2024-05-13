@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 {
+  color: rgb(10, 68, 48);
+  border-bottom: black solid 1px;
+  margin: 8px;
+  padding: 8px;
+ }
+
+ label, input{
+  display:flex;
+  flex-direction:column;
+  /* margin: 8px */
+}
+
+.frame_please {
+  width: 25vw;
+  margin: 8px;
+  border-left: gray solid 3px;
+  padding-left: 4px;
+  /* margin: ; */
+}
+
+form {
+  margin: 8px
+}

@@ -1,0 +1,35 @@
+<%# <h1>answer</h1> %>
+<%# <p></p> %>
+<h1>Stupid Coaching 🙉</h1>
+
+<% user_input = @params["question"] %>
+
+<%# <%= user_input.end_with?("?") %>
+
+<% if user_input == "I am going to work" %>
+<% response = "Great" %>
+<% elsif user_input.end_with?("?") %>
+<% response = "Silly question, get dressed and go to work!" %>
+<% else %>
+<% response = "I don't care, get dressed and go to work!" %>
+<% end %>
+
+<div>
+  <div class="frame_please">
+    <p><%= user_input%></p>
+    <p>- You</p>
+  </div>
+  <div style="background-color: beige"  class="frame_please">
+    <p><%= response%></p>
+    <p>- Coach</p>
+  </div>
+</div>
+
+
+<div style="margin: 8px">
+<%= link_to "Ask another!", ask_path %>
+</div>
+
+<%# <% elsif user_input.end_with?("?") %>
+<%# <p><% "hi" %>
+<%# <%end%>
